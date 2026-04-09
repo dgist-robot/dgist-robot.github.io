@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Interactive Robot Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">DGIST <span>Interactive Robot Lab</span></a>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      
+      
+        
+        
+        <li><a href="/">Home</a></li>
+      
+        
+        
+        <li><a href="/join">How to Join</a></li>
+      
+        
+        
+        <li><a href="/team">Team</a></li>
+      
+        
+        
+        <li><a href="/publication">Publication</a></li>
+      
+        
+        
+        <li><a href="/research">Research</a></li>
+      
+        
+        
+        <li><a href="/video">Video</a></li>
+      
+        
+        
+        <li><a href="/photos">Photos</a></li>
+      
+        
+        
+        <li><a href="/contact">Contact</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="hero page-header">
+  <div class="hero-inner">
+    <div class="hero-label">What We Do</div>
+    <h1>Research</h1>
+    
+  </div>
+</div>
+
+
+<div class="section">
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <video autoplay loop muted playsinline>
+            <source src="/assets/img/research/Baymax_demo.mp4" type="video/mp4">
+          </video>
+        
+      </div>
+      <div class="project-info">
+        <h3>Inflatable Whole-Body Robotic Skin with Internal ToF Depth Sensing</h3>
+        <div class="project-meta">May 2025 - Current &nbsp;|&nbsp; Interactive Robot Lab, DGIST</div>
+        
+        <ul class="project-points">
+          
+          <li>Developed a single-piece inflatable robotic skin that provides a large geometric margin between the contact surface and the rigid frame, enabling contact detection before impact reaches the rigid structure.</li>
+          
+          <li>Designed custom ToF sensor modules with tilted orientation to achieve full-body coverage without blind spots using a minimal number of sensors.</li>
+          
+          <li>Trained a kinematics-based point-cloud predictor to estimate nominal skin geometry, enabling motion-agnostic contact localization by detecting deviations from the predicted surface.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <video autoplay loop muted playsinline>
+            <source src="/assets/img/research/Tactile_proprioceptive_fusion.mp4" type="video/mp4">
+          </video>
+        
+      </div>
+      <div class="project-info">
+        <h3>Tactile-proprioceptive sensor fusion for whole-body physical human-robot interaction</h3>
+        <div class="project-meta">March 2025 - Current &nbsp;|&nbsp; Interactive Robot Lab, DGIST (with KIMLAB, UIUC)</div>
+        
+        <ul class="project-points">
+          
+          <li>Fused tactile cues with motor-current proprioception to estimate multi-axis contact forces on a skin-integrated robot arm.</li>
+          
+          <li>Proposed a contact-aware torque estimation method that disambiguates static friction from external forces using tactile onset detection, enabling sensitive force perception without explicit friction identification.</li>
+          
+          <li>Trained a temporal convolutional network (TCN) to compensate friction hysteresis during stick-slip transitions, reducing the estimation dead band by 53.9% and enabling smooth kinesthetic teaching.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <video autoplay loop muted playsinline>
+            <source src="/assets/img/research/Magnet_skin_demo.mp4" type="video/mp4">
+          </video>
+        
+      </div>
+      <div class="project-info">
+        <h3>Magnet-based soft robotic skin using a 3D-Printed multi-lattice structure and CNN-Based tactile super-resolution</h3>
+        <div class="project-meta">March 2025 - Current &nbsp;|&nbsp; Interactive Robot Lab, DGIST</div>
+        
+        <ul class="project-points">
+          
+          <li>We developed a magnet-embedded TPU multi-lattice structure fabricated via SLS 3D printing, enabling large-area tactile sensing with overlapping receptive fields and minimal blind spots.</li>
+          
+          <li>Designed a sparse 4x4 Hall-effect sensor array that measures 3-axis magnetic field variations in a non-contact configuration, physically isolating sensing electronics from external stimuli.</li>
+          
+          <li>Implemented a CNN-based tactile super-resolution model achieving 1.13 mm mean XY localization error and 0.55 mm depth error over a 140 mm x 140 mm sensing area.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <video autoplay loop muted playsinline>
+            <source src="/assets/img/research/EIT_pneumatic_fusion.mp4" type="video/mp4">
+          </video>
+        
+      </div>
+      <div class="project-info">
+        <h3>EIT-Pneumatic Hybrid Robotic Skin for Practical and Accurate Force Map Reconstruction</h3>
+        <div class="project-meta">March 2025 - Current &nbsp;|&nbsp; Interactive Robot Lab, DGIST (with KAIST and TU/e)</div>
+        
+        <ul class="project-points">
+          
+          <li>Proposed a hybrid tactile sensing framework that fuses electrical impedance tomography (EIT) with pneumatic sensing, using Tikhonov-regularized reconstruction and per-pad pneumatic calibration for accurate force map estimation.</li>
+          
+          <li>Fabricated the entire robotic skin using only FDM 3D printing (PLA/TPU) and spray coating (carbon/metallic ink), enabling a low-cost, accessible, and scalable design for whole-body integration.</li>
+          
+          <li>Reduced force estimation sensitivity non-uniformity, and demonstrated chest-mounted integration on a humanoid robot with reliable multi-contact sensing at 100 Hz.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <video autoplay loop muted playsinline>
+            <source src="/assets/img/research/PAPRAS_pHRI.mp4" type="video/mp4">
+          </video>
+        
+      </div>
+      <div class="project-info">
+        <h3>Intuitive physical interaction based on whole-body tactile data in everyday environment</h3>
+        <div class="project-meta">July 2024 — Current &nbsp;|&nbsp; Interactive Robot Lab, DGIST (with KIMLAB, UIUC)</div>
+        
+        <ul class="project-points">
+          
+          <li>Skin-integrated robot arm is deployed on everyday environment such as kitchen.</li>
+          
+          <li>The whole-body tactile data is used for both tactile servoing and non-verbal commanding.</li>
+          
+          <li>All measurements and data exchange are performed using ROS2 and micro-ROS.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <img src="/assets/img/research/3D_printed_hand.png" alt="Fully 3D printable robot hand with soft tactile sensor">
+        
+      </div>
+      <div class="project-info">
+        <h3>Fully 3D printable robot hand with soft tactile sensor</h3>
+        <div class="project-meta">May 2023 — March 2024 &nbsp;|&nbsp; KIMLAB, University of Illinois Urbana-Champaign (with Interactive Robot Lab, DGIST)</div>
+        
+        <ul class="project-points">
+          
+          <li>Fully 3D printable robot hand equipped with soft tactile sensors are developed.</li>
+          
+          <li>The developed robotic hand consists solely of 3D printed parts and commercial motors, with a total cost of less than $400.</li>
+          
+          <li>The tactile sensors are based on pneumatic and capacitive sensors and are capable of detecting not only sensitive forces but also the presence of nearby conductive objects.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <img src="/assets/img/research/MOMO_1.png" alt="MOMO: Mobile Object Manipulation Operator">
+        
+      </div>
+      <div class="project-info">
+        <h3>MOMO: Mobile Object Manipulation Operator</h3>
+        <div class="project-meta">April 2023 — September 2023 &nbsp;|&nbsp; KIMLAB, University of Illinois Urbana-Champaign</div>
+        
+        <ul class="project-points">
+          
+          <li>KIMLAB demonstrated the mobile object manipulation operator (MOMO) at IROS 2023 (Detroit).</li>
+          
+          <li>This demonstration showcased an innovative modular mobile manipulator system, incorporating pluggable mounts that can utilize 6-DOF arms and a sensor module for different configurations, thereby enhancing the system's capabilities beyond those of a traditional serving robot.</li>
+          
+          <li>The primary objectives of the system encompass the autonomous removal of obstructions from the floor and seamless delivery to human recipients without any human intervention.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <img src="/assets/img/research/Pneumatic_skin.png" alt="Low-cost and easy-to-build soft pneumatic robotic skin for safe and contact-rich pHRI">
+        
+      </div>
+      <div class="project-info">
+        <h3>Low-cost and easy-to-build soft pneumatic robotic skin for safe and contact-rich pHRI</h3>
+        <div class="project-meta">April 2022 — September 2023 &nbsp;|&nbsp; KIMLAB, University of Illinois Urbana-Champaign</div>
+        
+        <ul class="project-points">
+          
+          <li>Soft pneumatic robotic skin is developed for plug-and-playable robotic arm system (PAPRAS) by KIMLAB. The developed robotic skin was seamlessly integrated with the robot from both hardware and software perspectives.</li>
+          
+          <li>The developed soft sensing pad is cheap and easy to produce as it is entirely 3D printable. Also, the sensing electronics are designed to be compatible with ROS, making the system highly accessible to everyone.</li>
+          
+          <li>Soft pad's internal pressure changes due to tactile stimuli such as force and light touch. The measured signals are divided into low and high frequencies and were utilized for interaction or communication.</li>
+          
+          <li>The developed system was demonstrated to be capable of effectively handling situations such as joint entrapment and multiple contacts, thereby realizing safe and contact-rich pHRI.</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <img src="/assets/img/research/Biomimetic_skin.png" alt="A biomimetic elastomeric robot skin using electrical impedance and acoustic tomography for tactile sensing">
+        
+      </div>
+      <div class="project-info">
+        <h3>A biomimetic elastomeric robot skin using electrical impedance and acoustic tomography for tactile sensing</h3>
+        <div class="project-meta">March 2021 — June 2022 &nbsp;|&nbsp; KAIST (with MIT and Univ. of Stuttgart)</div>
+        
+        <ul class="project-points">
+          
+          <li>Skin-inspired multi-layer structure is fabricated using silicone elastomer and ionic hydrogel, which show squish yet durable properties.</li>
+          
+          <li>The ionic hydrogel layer is used as a medium for tactile sensing since it can transmit alternating electric currents and vibrations.</li>
+          
+          <li>The tomographic imaging methods are utilized to reconstruct a multi-modal tactile image from measurement data.</li>
+          
+          <li>A convolutional neural network allows the robotic skin to classify the type of touch by extracting the spatio-temporal pattern of the tactile stimuli.</li>
+          
+          <li>The developed robotic skin can be repaired using chitosan topohesive and silicone adhesive, even after severe damage (incision).</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <img src="/assets/img/research/EIT_skin_UR5e.png" alt="Neural-gas network-based optimal design method for ERT-based whole-body robotic skin">
+        
+      </div>
+      <div class="project-info">
+        <h3>Neural-gas network-based optimal design method for ERT-based whole-body robotic skin</h3>
+        <div class="project-meta">December 2019 — November 2021 &nbsp;|&nbsp; KAIST</div>
+        
+        <ul class="project-points">
+          
+          <li>We developed a method to obtain an optimal electrode arrangement for ERT-based robotic skin.</li>
+          
+          <li>The electrode arrangement is iteratively updated to maximize the minimum current density of the ERT-based robotic skin.</li>
+          
+          <li>Each electrode spreads out like a gas molecule inside the sensing domain, forming a grid-like arrangement adapted to the sensor's geometry.</li>
+          
+          <li>A number of electrodes can be freely adjusted to meet design requirements, owing to the automated design process.</li>
+          
+          <li>We implemented an ERT-based robotic skin with optimal design, and demonstrated physical human-robot interaction (pHRI).</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+    
+    <div class="project">
+      <div class="project-img">
+        
+          <img src="/assets/img/research/Adaptive_EIT.png" alt="Adaptive and Optimal Measurement Algorithm for ERT-based Large-area Tactile Sensors">
+        
+      </div>
+      <div class="project-info">
+        <h3>Adaptive and Optimal Measurement Algorithm for ERT-based Large-area Tactile Sensors</h3>
+        <div class="project-meta">December 2019 — October 2020 &nbsp;|&nbsp; KAIST</div>
+        
+        <ul class="project-points">
+          
+          <li>The performance of ERT-based sensors is improved by increasing the number of electrodes, but the number of measurements and the computational cost also increase.</li>
+          
+          <li>We propose an adaptive and optimal measurement algorithm for ERT-based tactile sensors; the measurement pattern consists of a base pattern and local patterns.</li>
+          
+          <li>The tactile events are detected by a base pattern that maximizes the distinguishability of local conductivity changes.</li>
+          
+          <li>A set of local patterns are selectively recruited near the stimulated region to acquire more detailed information.</li>
+          
+          <li>The algorithm was implemented with a field-programmable gate array (FPGA).</li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    
+  
+</div>
+
+
+<footer>
+  &copy; 2023 Interactive Robot Lab, DGIST.
+</footer>
+
+
+</body>
+</html>
